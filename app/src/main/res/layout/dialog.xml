@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/amount"
+        android:text="$320"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="Pending"
+        android:paddingTop="5dp"
+        android:tag="Hover"
+        android:layout_below="@+id/amount"
+        android:layout_alignStart="@+id/msg" />
+
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:text="From: "
+        android:paddingTop="5dp"
+        android:tag="Hover"
+        android:layout_below="@+id/type"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:text="Pending"
+        android:paddingTop="5dp"
+        android:layout_alignTop="@+id/tx2"
+        android:layout_alignStart="@+id/from" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:text="Pending"
+        android:paddingTop="5dp"
+        android:layout_alignBaseline="@+id/tx3"
+        android:layout_alignBottom="@+id/tx3"
+        android:layout_alignStart="@+id/reason" />
+
+    <TextView
+        android:id="@+id/tran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:text="Pending"
+        android:paddingTop="5dp"
+        android:layout_alignBaseline="@+id/tx4"
+        android:layout_alignBottom="@+id/tx4"
+        android:layout_alignStart="@+id/status" />
+
+    <TextView
+        android:id="@+id/tx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:text="Reason:"
+        android:paddingTop="5dp"
+        android:tag="Hover"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/tx1"
+        android:layout_alignEnd="@+id/tx1" />
+
+    <TextView
+        android:id="@+id/tx4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:text="TID:"
+        android:paddingTop="5dp"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/tx3"
+        android:layout_alignEnd="@+id/tx3" />
+
+    <TextView
+        android:id="@+id/tx3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="Status:"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/reason"
+        android:layout_alignEnd="@+id/tx2"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:text="Nappy"
+        android:paddingTop="5dp"
+        android:tag="Hover"
+        android:layout_marginLeft="43dp"
+        android:layout_above="@+id/tx2"
+        android:layout_toEndOf="@+id/tx1" />
+
+
+</RelativeLayout>

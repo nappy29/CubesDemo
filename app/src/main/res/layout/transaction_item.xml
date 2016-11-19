@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:background="#E8E8E8"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.daimajia.swipe.SwipeLayout
+                android:id="@+id/swipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                swipe:leftEdgeSwipeOffset="0dp"
+                swipe:rightEdgeSwipeOffset="0dp">
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/bad"
+                        android:layout_width="27dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/cancel" />
+
+                    <ImageButton
+                        android:id="@+id/good"
+                        android:layout_width="27dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/tick" />
+
+                    <!--<Button-->
+                        <!--android:id="@+id/delete"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_weight="4"-->
+                        <!--android:background="#ffffff"-->
+                        <!--android:text="Yes,Delete"-->
+                        <!--android:textColor="#FF5534" />-->
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="5dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/amount"
+                        android:text="Request From Paypal"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="18dp"
+                        android:tag="Hover"/>
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:text="Pending"
+                        android:paddingTop="5dp"
+                        android:tag="Hover"
+                        android:layout_below="@+id/msg"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignStart="@+id/msg" />
+
+                    <TextView
+                        android:id="@+id/amount"
+                        android:text="$320"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_below="@+id/msg"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+            </com.daimajia.swipe.SwipeLayout>
+        </android.support.v7.widget.CardView>
+</RelativeLayout>
